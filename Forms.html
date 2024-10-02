@@ -1,22 +1,49 @@
-<html>
+<!DOCTYPE html>
+
+
 
 <head>
+
     <title>Forms</title>
+
 </head>
 
 <body>
-    <form>
-        <label>Enter your name:</label><br>
-        <input type="text" id="name"><br>
-        <label>Enter your email</label><br>
-        <input type="email" id="email"><br>
-        <label>select the gender</label><br>
-        <input type="radio" id="female" value="female">Female<br>
-        <input type="radio" id="male" value="male">Male<br>
-        <label>select your fav ctiy</label><br>
-        <input type="checkbox" id="nagpur" value="nagpur">nagpur<br>
-        <input type="checkbox" id="kerala" value="kerala">Kerala<br>
-        <input type="submit"> </form>
+
+    <form action="#" method="post">
+
+        <label for="name">Enter your name:</label><br>
+
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Enter your email:</label><br>
+
+        <input type="email" id="email" name="email"><br>
+
+        <label>Select your gender:</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="male">Male</label><br>
+
+        <label>Select your favorite city:</label><br>
+
+        <input type="checkbox" id="nagpur" name="city" value="nagpur">
+
+        <label for="nagpur">Nagpur</label><br>
+
+        <input type="checkbox" id="kerala" name="city" value="kerala">
+
+        <label for="kerala">Kerala</label><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
 </body>
 
 </html>
