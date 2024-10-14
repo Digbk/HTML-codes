@@ -1,0 +1,49 @@
+body {
+    font-family:"aril" , sans-serif ;
+    background-color: aquamarine;
+    color: rgba(51, 240, 240, 0.781);
+ }
+
+ h1 {
+    color: #dfa11bbf;
+ }
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ a:hover {
+    color: blue;
+ }
+
+ ul>li{
+    font-weight: bold;
+ }
+
+ h1 + p {
+background-color: rgb(59, 156, 167);
+padding: 10px;
+border-radius: 5px;
+ }
+
+ ul li:hover{
+    color: #2df00b;
+ }
+
+ p:not(:first-of-type){
+    text-decoration: underline;
+ }
+ 
+ ul li::before{
+    content: "🚀";
+ }
+
+ p::first-letter{
+    font-size: 50px;
+    color: #96f903;
+ }
+
+ a::after{
+    content: "🌌";
+ }
