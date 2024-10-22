@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 1500px; 
+    position: relative;
+}
+
+.static {
+    background: lightblue;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.relative {
+    background: lightgreen;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute {
+    background: lightcoral;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.fixed {
+    background: gold;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.sticky {
+    background: violet;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.content {
+    margin-top: 200px;
+    height: 1000px;
+    background: lightgrey;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="static">Static Box</div>
+        <div class="relative">Relative Box</div>
+        <div class="absolute">Absolute Box</div>
+        <div class="fixed">Fixed Box</div>
+        <div class="sticky">Sticky Box</div>
+        <div class="content">Scroll down to see the sticky effect.</div>
+    </div>
+</body>
+
+</html>
