@@ -1,7 +1,7 @@
 body {
     font-family:"aril" , sans-serif ;
     background-color: aquamarine;
-    color: rgba(51, 240, 240, 0.781);
+    color: rgba(0, 42, 255, 0.781);
  }
 
  h1 {
@@ -22,7 +22,7 @@ a {
  }
 
  h1 + p {
-background-color: rgb(59, 156, 167);
+background-color: rgb(0, 21, 255);
 padding: 10px;
 border-radius: 5px;
  }
@@ -41,9 +41,8 @@ border-radius: 5px;
 
  p::first-letter{
     font-size: 50px;
-    color: #96f903;
+    color: #03f917;
  }
 
  a::after{
     content: "🌌";
- }
