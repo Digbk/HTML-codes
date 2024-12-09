@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Random Number</h2>
+        <p>Click the button</p>
+        <button onclick="generateRandomNumber()">Click</button>
+        <p id="randomNumber"></p>
+<script>
+
+    function generateRandomNumber() {
+
+        // Generate a random number between 1 and 5
+
+        var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+        document.getElementById("randomNumber").innerHTML = "Random Number: " + randomNumber;
+
+    }
+
+</script>
+    </body>
+</html>
