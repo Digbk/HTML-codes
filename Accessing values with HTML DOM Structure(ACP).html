@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables with Objects and Arrays</title>
+</head>
+
+<body>
+    <h1>Variables with Objects and Arrays Example</h1>
+    <div id="output"></div>
+
+    <script>
+      
+        const person = {
+            name: "Alice",
+            age: 25,
+            city: "New York"
+        };
+
+        const colors = ["Red", "Green", "Blue", "Yellow"];
+        
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `
+            <p>Person Details:</p>
+            <ul>
+                <li>Name: ${person.name}</li>
+                <li>Age: ${person.age}</li>
+                <li>City: ${person.city}</li>
+            </ul>
+        `;
+
+        outputDiv.innerHTML += `
+            <p>First Color: ${colors[0]}</p>
+            <p>Last Color: ${colors[colors.length - 1]}</p>
+        `;
+
+        const joinedColors = colors.join(", ");
+        const poppedColor = colors.pop();
+
+        outputDiv.innerHTML += `
+            <p>All Colors: ${joinedColors}</p>
+            <p>Color Removed: ${poppedColor}</p>
+            <p>Remaining Colors: ${colors.join(", ")}</p>
+        `;
+    </script>
+</body>
+
+</html>

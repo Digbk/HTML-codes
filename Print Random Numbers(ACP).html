@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers with While Loop</title>
+</head>
+
+<body>
+    <h1>Random Numbers Example</h1>
+    <div id="output"></div>
+
+    <script>
+       
+        function generateRandomNumbers(count) {
+            let numbers = [];
+            let i = 0;
+
+            while (i < count) {
+                let randomNumber = Math.floor(Math.random() * 100) + 1; // Random number between 1 and 100
+                numbers.push(randomNumber);
+                i++;
+            }
+
+            return numbers;
+        }
+
+       
+        let randomNumbers = generateRandomNumbers(10);
+
+        
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `<p>Random Numbers: ${randomNumbers.join(", ")}</p>`;
+    </script>
+</body>
+
+</html>
