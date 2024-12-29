@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <p>Multiply by 10</p>
+        <p id="demo"></p>
+
+        <script>
+            var numbers = [1, 2, 3, 4, 5];
+            
+            function myfunction(num) {
+                return num * 10;
+            }
+            var newarray = numbers.map(myfunction);
+            document.getElementById("demo").innerHTML = newarray;
+        </script>
+        
+    </body>
+</html>
