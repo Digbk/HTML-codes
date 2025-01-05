@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Array Mapping and Sorting</h1>
+    <p>Click the buttons below to map and sort the array:</p>
+    <button onclick="mapArray()">Map Array</button>
+    <button onclick="sortAscending()">Sort Ascending</button>
+    <button onclick="sortDescending()">Sort Descending</button>
+    <div>
+        <p><strong>Original Array:</strong> <span id="originalArray"></span></p>
+        <p><strong>Mapped Array:</strong> <span id="mappedArray"></span></p>
+        <p><strong>Sorted Array:</strong> <span id="sortedArray"></span></p>
+    </div>
+
+    <script>
+        
+        const originalArray = [5, 12, 8, 3, 7];
+        document.getElementById("originalArray").textContent = originalArray.join(", ");
+
+        let mappedArray = [];
+        let sortedArray = [];
+
+        function mapArray() {
+            mappedArray = originalArray.map(num => num * 2);
+            document.getElementById("mappedArray").textContent = mappedArray.join(", ");
+            document.getElementById("sortedArray").textContent = ""; 
+        }
+
+        function sortAscending() {
+            if (mappedArray.length === 0) {
+                alert("Please map the array first!");
+                return;
+            }
+            sortedArray = [...mappedArray].sort((a, b) => a - b);
+            document.getElementById("sortedArray").textContent = sortedArray.join(", ");
+        }
+
+        function sortDescending() {
+            if (mappedArray.length === 0) {
+                alert("Please map the array first!");
+                return;
+            }
+            sortedArray = [...mappedArray].sort((a, b) => b - a);
+            document.getElementById("sortedArray").textContent = sortedArray.join(", ");
+        }
+    </script>
+</body>
+
+</html>
