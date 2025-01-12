@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+</head>
+
+<body>
+  <h2>Login Form</h2>
+  <form id="loginForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <div id="nameError"></div>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter your age" />
+    <div id="ageError"></div>
+
+    <button type="submit">Login</button>
+  </form>
+  <div id="successMessage"></div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const age = parseInt(document.getElementById('age').value.trim(), 10);
+
+      const nameError = document.getElementById('nameError');
+      const ageError = document.getElementById('ageError');
+      const successMessage = document.getElementById('successMessage');
+
+      nameError.textContent = '';
+      ageError.textContent = '';
+      successMessage.textContent = '';
+
+      let isValid = true;
+
+      if (name === '') {
+        nameError.textContent = 'Name is required.';
+        isValid = false;
+      } else if (!/^[a-zA-Z\s]+$/.test(name)) {
+        nameError.textContent = 'Name must contain only letters and spaces.';
+        isValid = false;
+      }
+
+      if (isNaN(age)) {
+        ageError.textContent = 'Age is required.';
+        isValid = false;
+      } else if (age < 18) {
+        ageError.textContent = 'You must be at least 18 years old.';
+        isValid = false;
+      }
+
+      if (isValid) {
+        successMessage.textContent = `Welcome, ${name}!`;
+      }
+    });
+  </script>
+</body>
+
+</html>
+
