@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Paradise</title>
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+             font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #3cff00;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            flex: 1;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 14px 20px;
+            text-align: center;
+            color: #e1ff00;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #0073ff;
+        }
+
+        /* Header Section with Food Image */
+        header {
+            background: url('your-food-header-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            transition: filter 0.3s ease;
+            /* Transition for hover effect */
+        }
+
+        header:hover {
+            filter: brightness(150%);
+            /* Darkens the header image on hover */
+            cursor: pointer;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Main Content Section */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            display: block;
+            max-width: 50%;
+            height: auto;
+            margin: 0 auto 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Food Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header with Food Background Image -->
+    <header>
+        <h1>Welcome to Food Paradise</h1>
+        <p>Discover delicious flavors and mouth-watering dishes!</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h2>Today's Special</h2>
+        <p>
+            Savor the taste of our special dish, made with the freshest ingredients and bursting with flavor.
+        </p>
+        <!-- In-content Food Image -->
+        <img src="your-food-content-image.jpg" alt="Delicious Food Dish">
+        <p>
+            Explore our menu and enjoy a culinary journey that will delight your senses. Our chefs are dedicated to
+            preparing each dish with passion and creativity.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Food Paradise. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
